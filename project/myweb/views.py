@@ -4,11 +4,13 @@ from .forms import CreateStudent
 from django.contrib import messages
 # Create your views here.
 
-def homepage(request):
+
+
+def home(request):
     return render(request,template_name="home.html")
 
 def logout(request):
-    return render(request,template_name="home.html")
+    return render(request,template_name="accounts/login.html")
 
 def student_registration(request):
     if request.method == "POST":

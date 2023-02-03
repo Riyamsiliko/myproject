@@ -14,7 +14,7 @@
                             <h1>Login</h1>
                             <p class="text-muted">Sign In to your account</p>
                             {% include 'partials/_alerts.html' %}
-                            <form action="" method="POST">
+                            <form action="{% url 'myweb:homepage' %}" method="POST">
                                 {% csrf_token %}
                                 {% for field in forms %}
                                     <div class="input-group mb-3">

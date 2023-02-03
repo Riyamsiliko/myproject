@@ -3,7 +3,8 @@ from . import views
 
 app_name="myweb"
 urlpatterns = [
-    path('',views.homepage,name='homepage'),
+    
+    path('',views.home,name='homepage'),
     path('logout',views.logout,name='logout'),
     path('studentlist/', views.student_list, name='student_list'),
     path('<int:student_id>/', views.single_student, name='single_student'),
